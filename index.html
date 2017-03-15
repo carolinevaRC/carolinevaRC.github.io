@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
   <style>
   body {
       position: relative;
@@ -19,9 +21,9 @@
       font-size: 16px;
   }
   #section1 {color: #fff; background-color: #1E88E5;height:1000px;}
-  #section2 {color: #fff; background-color: #673ab7;height:1000px;}
-  #section3 {color: #fff; background-color: #ff9800;height:1000px;}
-  #section4 {color: #fff; background-color: #1E88E5;height:1000px;}
+  #section2 {color: #fff; background-color: #673ab7;height:500px;}
+  #section3 {color: #fff; background-color: #ff9800;height:800px;}
+  #section4 {color: #fff; background-color: #1E88E5;height:900px;}
   #section5 {color: #fff; background-color: #673ab7;height:1000px;}
   #section6 {color: #fff; background-color: #ff9800;height:1000px;}
   #section7 {color: #fff; background-color: #1E88E5;height:1000px;}
@@ -37,6 +39,21 @@
         margin-left: 150px;
     }
   }
+
+
+.boxed {
+  border: 1px solid green ;
+  border-radius: 20px ;
+  -moz-border-radius: 20px ;
+  -webkit-border-radius: 20px ;  
+  width:300px;
+  height:150px;
+  background-color:green;
+
+}
+
+
+
   </style>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
@@ -56,11 +73,12 @@
       <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
         <li><a href="#section1">Home</a></li>
         <li><a href="#section2">Meeting Information</a></li>
-        <li><a href="#section3">Officers & Directors</a></li>
-        <li><a href="#section4">Club Members</a></li>
-        <li><a href="#section5">Five Avenues of Service</a></li>
+        <li><a href="#section3">Officers & Members</a></li>
+        <li><a href="#section4">Five Avenues of Service</a></li>
+
 		
 <!--		
+        <li><a href="#section5">Section 5</a></li>
         <li><a href="#section6">Section 6</a></li>
         <li><a href="#section7">Section 7</a></li>
         <li><a href="#section8">Section 8</a></li>
@@ -125,34 +143,40 @@
 	  
       <div id="section2"> 
         <h1>Meeting Information</h1>
-		
-<iframe src="http://www.ismyrotaryclub.org/Club/ClubInformation.cfm?D=7610&ClubID=51465&xsl=Default.xsl" style="border:none;"></iframe>
-
-
-
-
+		<p>The Rotary Club of Caroline meets weekly for fellowship, breakfast, and an informative and interesting presentation from a guest speaker.</p>
+		<br><br>
+        <div align="center">
+		<div class="boxed">
+        <font size="6"><a href="http://www.ismyrotaryclub.org/Club/ClubInformation.cfm?D=7610&ClubID=51465&xsl=Default.xsl" target="_blank"><font color="#FFFFFF">Click here for meeting time and location</font></a></font>
+        </div>
+		</div>
 	  </div>
-<!--		
-		<div align="center"><iframe class="my_iframe" src="http://www.ismyrotaryclub.org/Club/ClubInformation.cfm?D=7610&ClubID=51465&xsl=Default.xsl" height="500px" width="600px" scrolling="no"></iframe></div>
 
 	  
-
 	    
       <div id="section3">
         <h1>Officers and Directors of the Club</h1>
-		<div align="center"><iframe class="my_iframe" src="http://www.ismyrotaryclub.org/Club/ClubLeaders.cfm?D=7610&ClubID=51465&xsl=DefaultNoOfficePhone.xsl" height="800px" width="600px" scrolling="no"></iframe></div>		
-      </div>
-	  	  
-	  
-      <div id="section4">    
+		<br><br>
+        <div align="center">
+		<div class="boxed">
+        <font size="6"><a href="http://www.ismyrotaryclub.org/Club/ClubLeaders.cfm?D=7610&ClubID=51465&xsl=DefaultNoOfficePhone.xsl" target="_blank"><font color="#FFFFFF">Click here for list of Officers and Directors</font></a></font>
+        </div>
+		</div>
+		
+		<br><br>
+		
         <h1>Club Members</h1>
-		<div align="center"><iframe class="my_iframe" src="http://www.ismyrotaryclub.org/Club/ClubMembers.cfm?D=7610&ClubID=51465&xsl=Default.xsl" height="500px" width="600px" scrolling="no"></iframe></div>				
-      </div>
+		<br><br>
+        <div align="center">
+		<div class="boxed">
+        <font size="6"><a href="http://www.ismyrotaryclub.org/Club/ClubMembers.cfm?D=7610&ClubID=51465&xsl=Default.xsl" target="_blank"><font color="#FFFFFF">Click here for list of Club Members</font></a></font>
+        </div>
+		</div>
+	  </div>			  	  
 	  
-	  -->
 	  
 	  
-      <div id="section5"> 
+      <div id="section4"> 
         <h1>Five Avenues of Service</h1>
 		
 		<p>The Object of Rotary is to “encourage and foster the ideal of service as a basis of worthy enterprise.”  Rotary is a service organization.  Since 1910, the Rotary Motto has been “<i>Service Above Self</i>.”</p>
