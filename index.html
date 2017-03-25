@@ -21,21 +21,28 @@
       font-size: 16px;
   }
   #section1 {color: #fff; background-color: #1E88E5;height:1000px;}
-  #section2 {color: #fff; background-color: #673ab7;height:500px;}
+  #section2 {color: #fff; background-color: #673ab7;height:700px;}
   #section3 {color: #fff; background-color: #ff9800;height:800px;}
   #section4 {color: #fff; background-color: #1E88E5;height:900px;}
-  #section5 {color: #fff; background-color: #673ab7;height:1000px;}
-  #section6 {color: #fff; background-color: #ff9800;height:1000px;}
-  #section7 {color: #fff; background-color: #1E88E5;height:1000px;}
-  #section8 {color: #fff; background-color: #673ab7;height:1000px;}
-  #section9 {color: #fff; background-color: #ff9800;height:1000px;}
-  #section10 {color: #fff; background-color: #1E88E5;height:1000px;}
-  #section11 {color: #fff; background-color: #673ab7;height:1000px;}
-  #section12 {color: #fff; background-color: #ff9800;height:1000px;}      
+
+  
+  #section51 {color: #fff; background-color: #00bcd4;height:1000px;}
+  #section52 {color: #fff; background-color: #009688;height:1200px;}
+  #section53 {color: #fff; background-color: #482161;height:900px;}
+  #section54 {color: #fff; background-color: #ae4f61;height:1000px;}  
+    
+  #section61 {color: #fff; background-color: #ff9800;height:1200px;}
+  #section62 {color: #fff; background-color: #673ab7;height:700px;}  
+  
+  #section7 {color: #fff; background-color: #1E88E5;height:700px;}
+  #section8 {color: #fff; background-color: #673ab7;height:700px;}
+  #section9 {color: #fff; background-color: #ff9800;height:700px;}
+  #section10 {color: #fff; background-color: #1E88E5;height:700px;}
+   
   
   
   @media screen and (max-width: 810px) {
-    #section1, #section2, #section3, #section4, #section5, #section6,#section7, #section8, #section9,#section10, #section11, #section12  {
+    #section1, #section2, #section3, #section4, #section51, #section52, #section53, #section54, #section61,#section62, #section7, #section8, #section9,#section10  {
         margin-left: 150px;
     }
   }
@@ -68,35 +75,47 @@
 <br>
 
 <div class="container">
-  <div class="row">
-    <nav class="col-sm-3" id="myScrollspy">
+  <div class="row">  <!-- entire web page with just one big row with 2 columns (navigation on the left (col-sm-3) and content on the right (col-sm-9) -->
+    <nav class="col-sm-3" id="myScrollspy">   <!-- first column of one big row for navigation -->
       <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
         <li><a href="#section1">Home</a></li>
         <li><a href="#section2">Meeting Information</a></li>
         <li><a href="#section3">Officers & Members</a></li>
         <li><a href="#section4">Five Avenues of Service</a></li>
 
-		
-<!--		
-        <li><a href="#section5">Section 5</a></li>
-        <li><a href="#section6">Section 6</a></li>
-        <li><a href="#section7">Section 7</a></li>
-        <li><a href="#section8">Section 8</a></li>
-        <li><a href="#section9">Section 9</a></li>
-        <li><a href="#section10">Section 10</a></li>
-        <li><a href="#section11">Section 11</a></li>
-        <li><a href="#section12">Section 12</a></li>
-		
--->
-										
-      </ul>
-    </nav>
-    <div class="col-sm-9">
-      <div id="section1">    
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Rotary<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section51">What Is Rotary?</a></li>
+            <li><a href="#section52">Rotary Foundation</a></li>
+			<li><a href="#section53">Four Way Test</a></li>
+			<li><a href="#section54">Five Avenues of Service</a></li>
+          </ul>
+        </li>		
 
-        <div class="col-sm-8">
-			  
-        <h1>Welcome</h1>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Becoming A Member<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section61">How To Join</a></li>
+            <li><a href="#section62">Prospective Contact</a></li>
+          </ul>
+        </li>	
+
+        <li><a href="#section7">Meeting Makeups</a></li>		
+        <li><a href="#section8">Useful Links</a></li>
+        <li><a href="#section9">Contact Us</a></li>
+        <li><a href="#section10">For Members...</a></li>		
+														
+      </ul>
+    </nav>  <!-- end of navigation section -->
+	
+	
+	
+    <div class="col-sm-9"> <!-- second column of one big row for contents -->
+      	<div id="section1">    <!-- Section 1 has its own two columns (col-sm-8 (for welcome content) and col-sm-4 (for announcements) total up to 12) -->
+			
+	        <div class="col-sm-8">		<!-- welcome content -->	  
+		        <h1>Welcome</h1>
         		<p>The Rotary Club of Caroline was chartered in 1998 by a group of dedicated business and education leaders who saw Rotary as a way to give back to their community.</p>
 				<p>The club serves the community by sponsoring the following:</p>
 				<ul>
@@ -126,9 +145,9 @@
 				John F. Germ - President, Rotary International<br>
 				Janet L. S. Brown - District Governor, District 7610<br>
 				Macine W. Williams - President, Rotary Club of Caroline</p>		
-		</div>
+			</div>  <!-- end of Welcome content -->
 		        
-		<div class="col-sm-4" style="background-color:orange;">
+			<div class="col-sm-4" style="background-color:orange;">  <!-- announcements section -->
 				<br>
 				<font size="5"><u><div align="center"><b>Annoucements</b></div></u></font><br>
         		Meetings:<br>
@@ -143,12 +162,12 @@
 				ANOTHER SHOTGUN RAFFLE COMING SOON
 				<br><br>
 				
-		</div>
-	  </div>
+			</div>  <!-- end of announcement section -->
+	  </div> <!-- end of section1 -->
 	  
 	  	  
 	  
-      <div id="section2"> 
+      <div id="section2"> 				
         <h1>Meeting Information</h1>
 		<p>The Rotary Club of Caroline meets weekly for fellowship, breakfast, and an informative and interesting presentation from a guest speaker.</p>
 		<br><br>
@@ -157,7 +176,7 @@
         <font size="6"><a href="http://www.ismyrotaryclub.org/Club/ClubInformation.cfm?D=7610&ClubID=51465&xsl=Default.xsl" target="_blank"><font color="#FFFFFF">Click here for meeting time and location</font></a></font>
         </div>
 		</div>
-	  </div>
+	  </div>  <!-- end of section2 -->
 
 	  
 	    
@@ -179,7 +198,7 @@
         <font size="6"><a href="http://www.ismyrotaryclub.org/Club/ClubMembers.cfm?D=7610&ClubID=51465&xsl=Default.xsl" target="_blank"><font color="#FFFFFF">Click here for list of Club Members</font></a></font>
         </div>
 		</div>
-	  </div>			  	  
+	  </div>	<!-- end of section3 -->		  	  
 	  
 	  
 	  
@@ -204,45 +223,272 @@
         
         <p><b><u>New Generations</u></b><br>
         By nurturing youth, Rotarians can provide the skills young people need to succeed as future community leaders. Youth Programs provide Rotarians the opportunity to develop their own leadership and communication skills and also provides for many incredible moments!</p>
-      </div>
+      </div>  <!-- end of section4 -->
+
+
+
+      <div id="section51">
+        <h1>About Rotary - What Is Rotary?</h1>
+		
+		<p>Rotary is an organization of business and professional leaders united worldwide who provide humanitarian service, encourage high ethical standards in all vocations, and help build goodwill and peace in the world. In more than 160 countries worldwide, approximately 1.2 million Rotarians belong to more than 30,000 Rotary clubs.</p>
+ 
+        <p>Rotary club membership represents a cross-section of the community's business and professional men and women. The world's Rotary clubs meet weekly and are nonpolitical, nonreligious, and open to all cultures, races, and creeds.</p>
+         
+        <p>The main objective of Rotary is service — in the community, in the workplace, and throughout the world. Rotarians develop community service projects that address many of today's most critical issues, such as children at risk, poverty and hunger, the environment, illiteracy, and violence. They also support programs for youth, educational opportunities and international exchanges for students, teachers, and other professionals, and vocational and career development. The Rotary motto is <i>Service Above Self</i>.</p>
+
+		<div align="center">
+		<div class="row">
+		    <div class="col-sm-6">			
+			<img src="Images/VolunteerAtFence.jpg" class="img-responsive" class="img-rounded" width="200" height="156" alt="Volunteer At Fence" title="" border="0" />			
+			</div>
+ 			<div class="col-sm-6">			
+			<img src="Images/VolunteerGroup.jpg" class="img-responsive" class="img-rounded" width="200" height="135" alt="Volunteer Group" title="" border="0" />
+			</div>
+	    </div> 
+		</div>		        
+         	              	 
+        <p>Although Rotary clubs develop autonomous service programs, all Rotarians worldwide are united in a campaign for the global eradication of polio. In the 1980s, Rotarians raised US$240 million to immunize the children of the world; by 2005, Rotary's centenary year and the target date for the certification of a polio-free world, the PolioPlus program will have contributed US$500 million to this cause. In addition, Rotary has provided an army of volunteers to promote and assist at national immunization days in polio-endemic countries around the world.</p>
+         
+        <p>Find out more about Rotary by visiting the <a href="https://www.rotary.org" target="_blank"><font color="#FFFF00">Rotary International web site</font></a>.</p>
+      </div>   <!-- end of section51 -->
 	  
+	  
+	  
+      <div id="section52">
+        <h1>About Rotary - The Rotary Foundation</h1>
+		<p>The Rotary Foundation of Rotary International is a not-for-profit corporation that promotes world understanding through international humanitarian service programs and educational and cultural exchanges. It is supported solely by voluntary contributions from Rotarians and others who share its vision of a better world. <b>Since 1947, the Foundation has awarded more than US$1.1 billion in humanitarian and educational grants</b>, which are initiated and administered by local Rotary clubs and districts.</p>
+ 
+         <p>The Foundation was created in 1917 by Rotary International's sixth president, Arch C. Klumph, as an endowment fund for Rotary "to do good in the world." It has grown from an initial contribution of US$26.50 to more than US$73 million contributed in 2000-01. Its event-filled history is a story of Rotarians learning the value of service to humanity.</p>
+          
+		<div align="center">
+		<div class="row">
+		    <div class="col-sm-6">				
+			<img src="Images/PolioPlus.jpg" class="img-responsive" class="img-rounded" width="240" height="158" alt="Polio Plus" title="" border="0" />
+			<p>A child receives a polio vaccination through the Rotary Foundation Polio Plus project.</p>
+			</div>
+ 			<div class="col-sm-6">			
+			<img src="Images/CleanWater.jpg" class="img-responsive" class="img-rounded" width="240" height="158" alt="Clean Water" title="" border="0" />
+			<p>A Rotary Foundation Matching Grant brought clean drinking water to this small villiage.</p>
+			</div>
+	    </div> 
+		</div>	
+          
+         <p>The Foundation's Humanitarian Programs fund international Rotary club and district projects to improve the quality of life, providing health care, clean water, food, education, and other essential needs primarily in the developing world. One of the major Humanitarian Programs is PolioPlus, which seeks to eradicate the polio virus worldwide. Through its Educational Programs, the Foundation provides funding for some 1,200 students to study abroad each year. Grants are also awarded to university teachers to teach in developing countries and for exchanges of business and professional people. Former participants in the Foundation's programs have the opportunity to continue their affiliation with Rotary as Foundation Alumni.</p>
+          
+        <div align="center">
+		<div class="row">
+		    <div class="col-sm-12">				
+			<img src="Images/SolarSchool.jpg" class="img-responsive" class="img-rounded" width="400" height="198" alt="" title="" border="0" />
+			<p>A Matching Grant from the Rotary Foundation provided solar energy for three rural
+         schools near Santiago del Estero, Argentina.</p>
+				
+			</div>
+	    </div> 
+		</div>	
+		
+         <p>You can find out more about the Rotary Foundation by visiting the <a href="https://www.rotary.org/en/about-rotary/rotary-foundation" target="_blank"><font color="#FFFF00">Foundation section</font></a> of the <a href="https://www.rotary.org/" target="_blank"><font color="#FFFF00">Rotary International web site</font></a>.</p>
+
+      </div> <!-- end of section52 -->
+	  
+	  
+	  
+      <div id="section53">
+        <h1>About Rotary - Four Way Test</h1>
+		
+		<div align="center">
+		<p>The 4-Way Test<br>
+Of the things we think, say or do:</p>
+ 		</div>
+		
+		<br><br>
+ 		<ol>
+			<li>Is it the TRUTH?</li>
+			<li>Is it FAIR to all concerned?</li>
+			<li>Will it build GOODWILL and BETTER FRIENDSHIPS?</li>
+			<li>Will it be BENEFICIAL to all concerned?</li>
+        </ol>
+		
+		<br><br>
+		 
+        <p>From the earliest days of the organization, Rotarians were concerned with promoting high ethical standards in their professional lives. One of the world's most widely printed and quoted statements of business ethics is The 4-Way Test, which was created in 1932 by Rotarian Herbert J. Taylor (who later served as RI president) when he was asked to take charge of a company that was facing bankruptcy. This 24-word code of ethics for employees to follow in their business and professional lives became the guide for sales, production, advertising, and all relations with dealers and customers, and the survival of the company is credited to this simple philosophy. Adopted by Rotary in 1943, The 4-Way Test has been translated into more than a hundred languages and published in thousands of ways.</p>
+      </div>     <!-- end of section53 --> 
+	  
+	  
+	  
+      <div id="section54">
+        <h1>Five Avenues of Service</h1>
+		
+		<p>The Object of Rotary is to “encourage and foster the ideal of service as a basis of worthy enterprise.”  Rotary is a service organization.  Since 1910, the Rotary Motto has been “<i>Service Above Self</i>.”</p>
+ 
+        <p>Rotary strives to achieve it’s objective of “Service Above Self” through activities in five primary areas.  These are often referred to as the <i>Five Avenues of Service</i>.</p>
+         
+        <p><b><u>Club Service</u></b><br>
+        This “Avenue” promotes the development of acquaintance as an opportunity for service.  It involves the activities necessary to make the Club function successfully and achieve its goals.</p>
+         
+        <p><b><u>Vocational Service</u></b><br>
+        This area represents the opportunity that each Rotarian has to represent the dignity and utility of one’s vocation as an opportunity to serve society.  Rotarians promote and foster high ethical standards in business and professions and promote the recognition of the worthiness of all useful occupations.</p>
+         
+        <p><b><u>Community Service</u></b><br>
+        This “Avenue” relates to the activities that Rotarians undertake to improve the quality of life in their community.  Particular emphasis is given to helping children, needy families, the aged, the handicapped, and those most in need of assistance.  Rotarians strive to promote the ideal of service in their personal, business, and community lives.</p>
+         
+        <p><b><u>International Service</u></b><br>
+        In this area, Rotarians strive for the advancement of international understanding, goodwill, and peace through a world fellowship of business and professional persons united in the ideal of service.  International Service Projects are designed to meet the humanitarian needs of people in many lands, with particular emphasis on the most underprivileged children and families in developing countries.</p>
+        
+        <p><b><u>New Generations</u></b><br>
+        By nurturing youth, Rotarians can provide the skills young people need to succeed as future community leaders. Youth Programs provide Rotarians the opportunity to develop their own leadership and communication skills and also provides for many incredible moments!</p>
+
+      </div>	  <!-- end of section54 -->
 	  
 
-<!--	          
-      <div id="section6">
-        <h1>Section 6</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+          
+      <div id="section61">
+        <h1>Becoming A Member - How To Join</h1>
+		<p>Thank you for your interest in becoming a Rotarian.  Rotary International  is an association of individual clubs, with each club operating autonomously. Membership is extremely important to us, and we are always eager to hear from individuals interested in our mission and in joining a Rotary club. The RI universal premise is that the membership of each club constitutes an accurate representation of the business and professional population within the community served.</p>
+ 
+        <p>Membership in a Rotary club requires available business or professional classification opportunities as well as an invitation and sponsorship by a member of the club. Sometimes an individual cannot be invited or sponsored for membership.</p>
+         
+        <p>Rotarians are business and professional leaders who take an active role in their communities while greatly enriching their personal and professional lives. A Rotary club contains a diverse group of professional leaders from the community that the club serves.</p>
+         
+        <p>Membership in a Rotary club offers a number of benefits, including:</p>
+		
+		<ul>
+		<li>effecting change within the community</li>
+		<li>advancing business and professional contacts</li>
+		<li>developing leadership skills</li>
+		<li>gaining an understanding of — and having an impact on — international humanitarian issues</li>
+		</ul>
+
+        <p>Through Rotary International's service programs, a Rotary club can have a significant effect on the quality of life in its community. Rotary Foundation programs offer opportunities to form international partnerships that help people in need worldwide. Some 1.2  million Rotarians in 30,000 clubs in more than 160 countries make significant contributions to the quality of life at home and around the globe.</p>
+         
+        <p>To find out more about Rotary's rich history and the organization's mission and structure, please contact our club's Officers and Directors.</p>
+				
+		<div align="center">
+		<div class="boxed">
+        <font size="6"><a href="http://www.ismyrotaryclub.org/Club/ClubLeaders.cfm?D=7610&ClubID=51465&xsl=DefaultNoOfficePhone.xsl" target="_blank"><font color="#FFFFFF">Click here to contact our Officers and Directors</font></a></font>
+        </div>
+		</div>
+		
+		
       </div>
+
+	  
+
+      <div id="section62">
+        <h1>Becoming A Member - Prospective Contact</h1>
+		
+		<p>Rotary membership is by invitation only. If you would like to learn more about the Caroline VA Rotary Club and its various service projects, please contact our club's Officers and Directors.</p>
+
+		<div align="center">
+		<div class="boxed">
+        <font size="6"><a href="http://www.ismyrotaryclub.org/Club/ClubLeaders.cfm?D=7610&ClubID=51465&xsl=DefaultNoOfficePhone.xsl" target="_blank"><font color="#FFFFFF">Click here to contact our Officers and Directors</font></a></font>
+        </div>
+		</div>
+      </div>
+	  
+	  	  
+	  
       <div id="section7">    
-        <h1>Section 7</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        <h1>Meeting Makeup Opportunities</h1>
+		
+		<p>Need to make up a Rotary meeting that you missed?  Choose an option below:</p>
+ 
+ 		<br><br>
+		
+		<div align="center">
+        District 7610 Online Meeting Make Ups<br>
+        <a href="http://rotaryeclub7610.org/" target="_blank"><font color="#FFFF00">Rotary 7610 E-Club link</font></a>
+        
+		<br><br>
+         
+        Make Up On-Line Via the World Wide Web<br>
+           <a href="https://www.rotaryeclubone.org/" target="_blank"><font color="#FFFF00">eClub One Rotary Club</font></a>
+         
+        <br><br>
+		 
+        Make Up via the Rotary E-Club of the Carolinas<br>
+        <a href="http://wp-o.rotaryeclubcarolinas.org/" target="_blank"><font color="#FFFF00">Rotary eClub of the Carolinas!</font></a>
+        
+		<br><br>
+		 
+        ...Or you may attend any club's regular meeting
+		
+		</div>
       </div>
+	  
+  
+	  
       <div id="section8"> 
-        <h1>Section 8</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>        
+        <h1>Other Useful and Interesting Web Sites</h1>
+		
+		<p>Listed below are some links to web sites in and about Caroline, as well as links to other Rotary web sites.</p>
+ 
+        <p>Do you think we should have a link to your site on this page?  <a href="http://www.ismyrotaryclub.org/Club/ClubLeaders.cfm?D=7610&ClubID=51465&xsl=DefaultNoOfficePhone.xsl" target="_blank"><font color="#FFFF00">Let us know</font>.</a></p>
+        
+		<br><br>  
+        <div align="center">
+        <p>Web Sites In and About Caroline:</p> 
+               	
+        <a href="http://www.co.caroline.va.us/" target="_blank"><font color="#FFFF00">Caroline County, Virginia</font></a><br>
+        <a href="http://www.carolinechamber.com/" target="_blank"><font color="#FFFF00">Caroline Chamber of Commerce</font></a><br>
+        <a href="http://www.carolinelibrary.org/" target="_blank"><font color="#FFFF00">Caroline Library</font></a><br>
+        <a href="http://www.carolinearts.org/" target="_blank"><font color="#FFFF00">Caroline County Council of Arts</font></a><br>
+        <a href="http://www.weatherforyou.com/weather/virginia/caroline+county.html" target="_blank"><font color="#FFFF00">Caroline County Weather</font></a><br>
+        
+		<br><br> 
+        <p>Rotary Web Sites:</p>
+        
+		<a href="https://www.rotary.org/" target="_blank"><font color="#FFFF00">Rotary International</font></a><br> 	
+		<a href="https://www.rotary.org/en/about-rotary/rotary-foundation" target="_blank"><font color="#FFFF00">The Rotary Foundation</font></a><br>
+		<a href="http://www.rotary7610.org" target="_blank"><font color="#FFFF00">Rotary District 7610</font></a><br>
+        <a href="http://ismyrotaryclub.org/map/index.cfm?AccountID=7610" target="_blank"><font color="#FFFF00">District 7610 Clubs</font></a>
+
+		</div>
+      </div>    
+	  
+  
+	      
       <div id="section9">
-        <h1>Section 9</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        <h1>Contact Us</h1>
+		
+		<p>Thank you for visiting our web site.  Do you have questions or comments about Rotary, about our Club, or about this Website?  We'd like to hear from you!  Please contact us:</p>
+ 
+ 		
+        <div align="center">
+		<b>Mailing Address</b>:<br>   
+        The Rotary Club of Caroline<br> 
+        P.O. Box 508<br>
+        Bowling Green, VA  22427<br>
+		</div>
+         
+        You may also contact our club's Officers and Directors.</p>
+
+		<div align="center">
+		<div class="boxed">
+        <font size="6"><a href="http://www.ismyrotaryclub.org/Club/ClubLeaders.cfm?D=7610&ClubID=51465&xsl=DefaultNoOfficePhone.xsl" target="_blank"><font color="#FFFFFF">Click here to contact our Officers and Directors</font></a></font>
+        </div>
+		</div>
       </div>
+
+
+	  
       <div id="section10">    
-        <h1>Section 10</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        <h1>Member Area</h1>
+		
+		<p>This page is restricted to members who have been assigned a password.</p>
+		
+		
+		<div align="center">
+		<a href="https://www.directory-online.com/Rotary/SecLogin.cfm" target="_blank"><font color="#FFFF00">Click here to log into the District and Club database (DACdb)</font></a>
+		</div>
       </div>
-      <div id="section11"> 
-        <h1>Section 11</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>        
-      <div id="section12">
-        <h1>Section 12</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>	  	  	  
--->	  
+ 
 	  
 
-    </div>
-  </div>
-</div>
+    </div> <!-- for div class="col-sm-9", the large content space on the right-hand side of the navigation menu -->
+  </div> <!-- for the div class="row", one big row with 2 columns (navigation on the left (col-sm-3) and content on the right (col-sm-9))-->
+</div> <!-- for the div class="container" -->
+
+
 
 </body>
 </html>
